@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.MainFragment">
+
+    <!-- Note: A RecyclerView can also be used -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <!-- Scrollable content -->
+            <androidx.appcompat.widget.SearchView
+                style="@style/Widget.Material3.SearchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:contextClickable="true"
+                android:fadingEdge="vertical"
+                android:hint="@string/app_name"
+                android:minHeight="20dp"
+                android:outlineSpotShadowColor="@color/black"
+                android:requiresFadingEdge="vertical"></androidx.appcompat.widget.SearchView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/story_card_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:backgroundTint="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleRoundedCornerRadius="10dp"
+        android:background="@color/orange">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/textButtonTT"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="277dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="BÀI HỌC"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/textButtonSH"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="THƯ VIỆN"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="25dp"
+        android:background="@color/orange"
+        android:backgroundTint="@color/orange"
+        android:clipToOutline="true"
+        android:src="@drawable/camera"
+        app:layout_anchor="@id/bottomAppBar" />
+
+
+    <!--    <com.google.android.material.search.SearchView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:hint="@string/app_name"-->
+    <!--        app:layout_anchor="@id/search_bar">-->
+    <!--        &lt;!&ndash; Search suggestions/results go here (ScrollView, RecyclerView, etc.). &ndash;&gt;-->
+    <!--    </com.google.android.material.search.SearchView>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

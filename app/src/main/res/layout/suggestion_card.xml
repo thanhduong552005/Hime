@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:clickable="true"
+    android:background="@color/white"
+    android:focusable="true"
+    android:checkable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <!-- Title, secondary and supporting text -->
+
+
+        <TextView
+            android:id="@+id/suggest_title"
+            android:layout_width="381dp"
+            android:layout_height="18dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:paddingLeft="105dp"
+            android:text="@string/card_title"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/material_motion_duration_short_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="211dp"
+                android:layout_height="128dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/avt" />
+
+            <TextView
+                android:id="@+id/suggest_content"
+                android:layout_width="372dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/card_content"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="233dp"
+            android:layout_height="31dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/suggest_button"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:paddingTop="0dp"
+                android:paddingRight="53dp"
+                android:text="@string/card_button"
+                android:textSelectHandleRight="@string/card_button"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

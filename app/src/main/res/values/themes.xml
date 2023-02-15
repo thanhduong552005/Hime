@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KHKT_2023" parent="Theme.MaterialComponents.Light"></style>
+
+    <style name="Theme.KHKT_2023.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.KHKT_2023.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.KHKT_2023.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--    <style name="bottom_app_bar_button" parent="@android:style/Widget.MaterialComponents.Button.TextButton">-->
+    <!--        <item name="android:layout_weight" value="1" />-->
+    <!--        <item name="android:layout_width" value="wrap_content" />-->
+    <!--        <item name="android:layout_height" value="wrap_content" />-->
+    <!--        <item name="android:textColor" value="white" />-->
+    <!--    </style>-->
+</resources>

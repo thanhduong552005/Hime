@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:clickable="true"
+    android:background="@color/white"
+    android:focusable="true"
+    android:checkable="true"
+    tools:context=".ui.main.StoryCardActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <!-- Title, secondary and supporting text -->
+
+
+        <TextView
+            android:id="@+id/story_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="@string/card_title"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/material_motion_duration_short_2" />
+
+        <TextView
+            android:id="@+id/story_content"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="@string/card_content"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/story_button"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/card_button" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
